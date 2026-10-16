@@ -1,64 +1,102 @@
-# Test Results
+# Testing Log — Phase 4: Progressive Testing
 
-> Fill this file progressively as each test is completed.
-> Record actual measured values — never assumed.
-
-## Status: 📋 Not started — awaiting hardware assembly
+> Record actual measured values from prototype.
+> Never assume — measure and write here.
 
 ---
 
-## Phase 4 — Progressive Testing Log
+## Test Order (always follow this sequence)
 
-### Test 1: Solar Panel Output
-- Date:
-- Conditions (sunny / cloudy / time of day):
-- Open-circuit voltage (Voc): ___ V
-- Short-circuit current (Isc): ___ A
-- Notes:
+```
+Solar Panel → Controller → Battery → Motor (no blade) → Motor (with blade, no grass) → Full cutting test
+```
 
----
-
-### Test 2: Charge Controller → Battery
-- Date:
-- Battery voltage before charging: ___ V
-- Charging current: ___ A
-- Charging time to full: ___ hrs
-- Battery voltage after full charge: ___ V
-- Notes:
+Never run the blade under load until motor-only tests pass.
 
 ---
 
-### Test 3: Motor (no load)
-- Date:
-- Operating voltage: ___ V
-- No-load current: ___ A
-- Motor speed (if measurable): ___ RPM
-- Notes:
+## Test 1 — Solar Panel Output
+
+| Measurement | Value | Pass/Fail |
+|-------------|-------|-----------|
+| Date | | |
+| Weather (sunny/cloudy) | | |
+| Time of day | | |
+| Open-circuit voltage (Voc) | ___ V | |
+| Short-circuit current (Isc) | ___ A | |
+| Notes | | |
 
 ---
 
-### Test 4: Motor (with blade, no grass)
-- Date:
-- Operating voltage: ___ V
-- Current with blade: ___ A
-- Vibration observation:
-- Notes:
+## Test 2 — Charge Controller → Battery Charging
+
+| Measurement | Value | Pass/Fail |
+|-------------|-------|-----------|
+| Date | | |
+| Battery voltage before charging | ___ V | |
+| Charging current | ___ A | |
+| Battery voltage at full charge | ___ V | |
+| Time to full charge | ___ hrs | |
+| Notes | | |
 
 ---
 
-### Test 5: Cutting Performance
-- Date:
-- Grass type:
-- Cutting height:
-- Runtime on full charge: ___ mins
-- Current during cutting: ___ A
-- Blade performance:
-- Notes:
+## Test 3 — DC Motor (No Load, No Blade)
+
+| Measurement | Value | Pass/Fail |
+|-------------|-------|-----------|
+| Date | | |
+| Operating voltage | ___ V | |
+| No-load current | ___ A | |
+| Motor runs smoothly | YES / NO | |
+| Unusual noise or vibration | YES / NO | |
+| Notes | | |
 
 ---
 
-### Test 6: Full System
-- Date:
-- Solar → controller → battery → motor → blade — all working: YES / NO
-- Observations:
-- Safety notes:
+## Test 4 — Motor with Blade (No Grass)
+
+| Measurement | Value | Pass/Fail |
+|-------------|-------|-----------|
+| Date | | |
+| Operating voltage | ___ V | |
+| Current with blade | ___ A | |
+| Blade spins freely | YES / NO | |
+| Vibration level | Low / Medium / High | |
+| Blade guard secure | YES / NO | |
+| Notes | | |
+
+---
+
+## Test 5 — Cutting Performance
+
+| Measurement | Value | Pass/Fail |
+|-------------|-------|-----------|
+| Date | | |
+| Grass type tested | | |
+| Cutting clean and uniform | YES / NO | |
+| Current during cutting | ___ A | |
+| Runtime on full battery | ___ mins | |
+| Machine moves easily | YES / NO | |
+| Notes | | |
+
+---
+
+## Test 6 — Full System Test
+
+| Check | Result |
+|-------|--------|
+| Solar → controller → battery → motor → blade all working | YES / NO |
+| ON/OFF switch works correctly | YES / NO |
+| Blade guard secure | YES / NO |
+| No exposed wiring | YES / NO |
+| Machine structurally stable | YES / NO |
+| Safe to demonstrate | YES / NO |
+
+---
+
+## Final Observations
+
+- Runtime on full charge:
+- Charging time from flat battery (full sun):
+- Any improvements needed:
