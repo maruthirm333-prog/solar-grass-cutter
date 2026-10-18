@@ -155,3 +155,8 @@ The project reduces manual effort, produces no direct exhaust emissions during o
 ---
 
 Built by [PROTO X](https://github.com/maruthirm333-prog/protox-website) — Hassan, Karnataka
+
+
+
+<<<<welding too cost>>>>
+
